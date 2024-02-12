@@ -8,7 +8,7 @@ import {
   setDoc,
 } from "firebase/firestore";
 import { useMutation, useQuery } from "react-query";
-import { VUtils } from "../component/fakeapi/VUtils";
+import { VUtils } from "../component/common/VUtils";
 import { getStore } from "../services/FirebaseServices";
 import axios from "axios";
 

@@ -1,15 +1,11 @@
-import React from "react";
 import {
-  Navbar,
-  MobileNav,
-  Typography,
   Button,
   IconButton,
-  Card,
+  MobileNav,
+  Navbar,
+  Typography,
 } from "@material-tailwind/react";
-import { AvatarIcon } from "../common/AvatarIcon";
-import Register from "../registers/Register";
-import { Navigate } from "react-router";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export default function VNavbar() {
@@ -78,7 +74,7 @@ export default function VNavbar() {
         placeholder=""
       >
         <div className="flex items-center justify-between text-blue-gray-900">
-          <AvatarIcon />
+          {/* <AvatarIcon /> */}
           {/* <Typography
             placeholder=""
             as="a"

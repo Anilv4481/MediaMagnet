@@ -10,10 +10,11 @@ export default function ShowYtVideo() {
   async function handleDownload() {
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/download",
+        "http://localhost:5000/api/yt/scrapVideo",
         { videoLink },
         { responseType: "blob" }
       );
+      console.log(response, "response");
 
       const videoDataUrl = URL.createObjectURL(response.data);
       setShowVideoUrl(videoDataUrl);

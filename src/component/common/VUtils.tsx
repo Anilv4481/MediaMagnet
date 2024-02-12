@@ -1,14 +1,13 @@
 import Swal from "sweetalert2";
-import { arrayOfObjects } from "./staticData";
 
 export class VUtils {
-  static fakeApis() {
-    return new Promise((resolve) => {
-      const convrtData = JSON.stringify(arrayOfObjects);
-      console.log(convrtData, "convrtDatas");
-      resolve(convrtData);
-    });
-  }
+  // static fakeApis() {
+  //   return new Promise((resolve) => {
+  //     const convrtData = JSON.stringify(arrayOfObjects);
+  //     console.log(convrtData, "convrtDatas");
+  //     resolve(convrtData);
+  //   });
+  // }
   static takeInp(Placeholder: string) {
     return Number(prompt(Placeholder));
   }
